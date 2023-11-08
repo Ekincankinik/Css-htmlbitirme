@@ -1,0 +1,89 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;}
+
+body
+{height: 100vh;
+  background-color: azure;
+
+}
+
+.header-contact
+{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(112, 112, 110);
+    width: 100%;
+    height: 100px;
+    gap: 30px;
+
+}
+.contact-list{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+
+    list-style: none;
+}
+.contact-list li a{
+    text-decoration: none;
+    color: #dce4e4;
+    font-size: 20px;}
+
+    .contact-list li :hover{
+        color: rgb(6, 7, 7);
+    }
+
+
+
+.container
+{display: flex;
+    justify-content: center;
+    align-items: center;
+width: 100%;
+height: auto;
+    
+    
+}
+
+
+.text1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 450px;
+    width: 300px;
+    background-color:#ACBABA;
+    color: rgb(44, 3, 3);
+text-align: center;
+border-radius: 2%;
+padding: 30px;
+
+}
+
+
+.top-text
+{
+    font-size: 24px;
+    
+    margin-bottom: 40px;
+color:ghostwhite}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    padding: 4px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgb(172, 247, 247) ;
+    color:black;
+  }

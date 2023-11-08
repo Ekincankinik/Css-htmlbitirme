@@ -1,0 +1,393 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    
+
+    background: #FFFFFF;
+    
+    
+    }
+
+
+
+
+.camera{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+
+}
+
+.camera img{
+
+    cursor: pointer;
+
+    background: rgb(249, 249, 249);
+
+    border-radius: 50%;
+transition: background 0.5s, transform 0.5s 0.5s ease-in;
+position: relative;
+animation-name: motion;
+animation-duration: 6s;
+animation-direction:alternate;
+animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+.camera :hover
+{
+   background: pink ;
+    transform: rotateY(360deg);
+
+
+}
+
+
+
+.contact-links li a i{
+   cursor: pointer;
+ color: #c7c7c7;
+   border-radius: 30px;
+   transition:  transform 1s ease-in;
+
+
+}
+
+
+
+
+
+
+
+.contact-links li a i:hover
+{
+    color: aquamarine;
+    transform:rotateX(360deg);}
+
+
+
+
+/* Container bölümü */
+.container
+{ width:100%;
+   height: 100vh;
+margin: 8px 8px 8px 8px;
+}
+
+
+
+
+/* header için */
+
+.header{
+display: flex;
+justify-content: space-between;
+width: 100%;
+align-items: center;
+margin-top: 40px;
+
+}
+
+
+
+
+/* Logo bölümü */
+
+.logo{
+   
+   line-height: normal;
+    height: 100px;
+    font-family: "Lato";
+    font-size: 29.33px;
+    transform: scale(.4.2);
+    font-weight: 400;
+    padding-left: 14px;
+    padding-top: 12px ;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    letter-spacing: 12px;
+
+
+}
+.header .logo :hover{
+    color: black;
+}
+
+/* logo altı için /Photographer  */
+
+.logo-add
+{
+    padding-top: 0px;
+    font-size:16px;
+    font-weight:20;
+    font-family: "Lato";
+    letter-spacing:1px;
+
+}
+
+.contact-links{
+
+display: flex;
+justify-content: center;
+  align-items: center;
+    gap: 40px;
+   margin-right: 70px;
+}
+.header-right .contact-links li{
+    list-style-type: none;
+}
+
+.header-right .contact-links li a {
+   
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+grid-template-columns: 1fr 4fr 1fr;}
+
+
+
+#navsidebar{
+
+    
+    background: fixed; 
+      height: 55px; 
+      position:absolute;
+       padding:0px 10px;
+       margin: 0px; 
+       box-sizing:border-box;
+        font-family:"Lato";
+        transition: .4s;
+        line-height: 1.6em;
+       justify-content: center;
+       position: fixed;
+
+    } 
+
+.navsidebar-list{
+  
+    letter-spacing:3px;
+    list-style-type: none;
+    font-family: sans-serif;
+    font-size:  16px; 
+    font-weight: 400;
+    line-height: 3em;
+    padding: 0px;
+  margin-top: 35px;
+}
+
+
+
+
+.navsidebar-list li a{
+
+    text-decoration: none;
+    text-align: center;
+    color: #ACBABA;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: color 1s; 
+
+
+}
+
+
+.navsidebar-list li a:hover {
+ color: black;}
+
+
+
+
+.font-color{
+color: #ACBABA;
+}
+
+
+/* Gallery için */
+
+
+
+#container-gallery
+{ 
+    position: absolute;
+    overflow:auto;
+    height: 83%;    
+    width: 88%; 
+    margin-bottom: 0px;  
+    margin-left: 170px; 
+    margin-top: 30px;
+
+
+}
+
+.column{
+    display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows:auto;
+gap: 10px;
+   grid-auto-flow: dense;
+
+}
+
+
+.image-1{
+    grid-column: 1/3;
+}
+
+.image-2
+{grid-column: 1/3;}
+
+.image-4
+{grid-column: 1/3;}
+
+.image-6
+{grid-column: 2/4;}
+
+.image-12{
+    grid-column: 1/4;
+    grid-row: 6/6;
+}
+
+
+
+img {
+ max-width: 100%;
+ height: auto;
+ vertical-align: middle;
+ display: inline-block;
+ width: 100%;
+ height:90%;
+ object-fit: cover;
+
+
+}
+
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+ 
+
+
+.son{
+
+margin-top: 10px;
+border: 1px solid black;
+position: absolute;
+
+}
+
+.footer-top
+{
+display: flex;
+justify-content:space-around;
+align-items: center;
+gap: 100px;
+align-items: center;
+background-color: rgb(red, green, blue);
+height: 120px;
+width: 100%;
+border-right-color:white;
+border-left-color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.footer-text{
+    color: #ACBABA;
+}
+.rights {
+    display: flex;
+}
+
+.footer-right .contact-links li{
+    list-style-type: none;
+}
+
+.footer-right .contact-links li a {
+   
+    text-decoration: none;
+}
+
+
+.footer-text:hover{
+    color:black; }
+
+.image-2:hover{
+    height: 500px;
+}
+
+
+
+
+
+
+
+@keyframes motion{
+    from {transform: translateX(-300px)}
+    to {transform: translateX(300px);}
+
+}
+
+@media screen and (max-width: 800px){
+
+
+
+    #container-gallery
+    { 
+        position: absolute;
+        overflow:auto;
+        height: 83%;    
+        width: 60%; 
+        margin-bottom: 0px;  
+        margin-left: 170px; 
+        margin-top: 30px;
+    
+    
+    }
+
+    .footer-top
+{
+display: flex;
+justify-content:space-around;
+align-items: center;
+gap: 10px;
+align-items: center;
+background-color: rgb(red, green, blue);
+height: 120px;
+width: 85%;
+border-right-color:white;
+border-left-color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+margin-left: 50px;
+margin-right: 40px;
+margin-top: 20px;
+
+}
+
+
+
+.camera{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+
+}
+
+
+}
